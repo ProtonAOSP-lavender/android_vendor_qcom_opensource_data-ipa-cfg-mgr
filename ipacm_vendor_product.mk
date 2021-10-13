@@ -1,10 +1,9 @@
-TARGET_DISABLE_IPACM := false
-
 #IPACM_DATA
 IPACM_DATA += IPACM_cfg.xml
 IPACM_DATA += ipacm
 IPACM_DATA += ipacm.rc
 
+<<<<<<< HEAD
 ifeq ($(TARGET_USES_QMAA),true)
 ifneq ($(TARGET_USES_QMAA_OVERRIDE_DATA),true)
 	TARGET_DISABLE_IPACM := true
@@ -48,3 +47,6 @@ endif # $(TARGET_ARCH)
 endif
 endif
 endif
+=======
+PRODUCT_PACKAGES += $(IPACM_DATA)
+>>>>>>> parent of b367a24... ipacm: convert Android.mk files to Android.bp
